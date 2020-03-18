@@ -1,0 +1,292 @@
+/* Eigenschaften des Bodys, die allgemein sind */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: black;
+  background-size: cover;
+  background-color: #eeeeee;
+}
+
+/* Globalangaben */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Home-Seite Wetterinformations div*/
+.information {
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 24px;
+  box-shadow: 2px 2px 4px 1px #d2d2d2;
+  background-color: white;
+}
+/* Informations div Flexbox */
+.informationWrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.information div {
+  margin: 5px;
+}
+/* Alle Auflistungen bekommen diese Eigenschaften */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: #35679a;
+  color: white;
+  padding-top: 30px;
+  min-height: 65px;
+}
+/* Überschriften im Header */
+header h2 {
+  margin: 0 auto;
+}
+/* Home-Seite HomeButton-Überschrift */
+header #branding {
+  cursor: pointer;
+}
+/* Hover im Header */
+header #branding:hover {
+  color: #2ecc71;
+}
+/* Navigationselemente */
+nav {
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.navigationElement {
+  cursor: pointer;
+}
+
+.navigationElement:hover {
+  color: #2ecc71;
+}
+
+nav div {
+  margin: 5px;
+}
+/* Link Eigenschaft im Header */
+header a {
+  text-decoration: none;
+}
+
+header li:hover {
+  font-weight: bold;
+}
+
+/* Body */
+
+/* Die unterschiedlichen Divs für die
+ Darstellung der Wetterdaten auf der Home-Seite */
+#location_value {
+  font-size: 30px;
+}
+
+#description_value {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+#temperatur_value {
+  margin: 10px 0 10px 0;
+  font-size: 250%;
+}
+
+#time_value {
+  font-size: 25px;
+}
+
+#location_value,
+#description_value,
+#temperatur_value,
+#time_value {
+  margin: 20px 0 0 0;
+}
+/* Flex Wrapper */
+#favoriteWrapper {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.favoriteBox {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid #35679a;
+  line-height: 50px;
+}
+
+.forecastbox,
+.hourChangeElement {
+  padding: 10px;
+  border-radius: 24px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#overviewWrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+#forecastWrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#searchInput {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 24px;
+  margin-top: 15px;
+  min-width: 220px;
+}
+
+#searchButton {
+  padding: 5px;
+  background-color: white;
+  border-radius: 24px;
+  border: none;
+  min-width: 75px;
+}
+
+/* Login Page */
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #35679a;
+  text-align: center;
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* Gibt den Login-Elementen den Style */
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="button"] {
+  border: 3px solid #e8491d;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input::placeholder{
+  color: rgb(134, 134, 134);
+}
+
+.box input[type="text"]:hover,
+.box input[type="password"]:hover {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.box input[type="button"] {
+  width: 120px;
+  border: 3px solid #2ecc71;
+}
+
+.box input[type="button"]:hover {
+  background: #2ecc71;
+}
+
+.localInformation {
+  margin-top: 30px;
+}
+
+#usernameSettings,
+#passwordSettings {
+  text-align: center;
+  min-height: 50px;
+  font-style: bold;
+  font-size: 150%;
+  color: gray;
+}
+
+#saveSettingsButton {
+  font-size: 15px;
+  background-color: #406e9f;
+  border: none;
+  color: white;
+  border-radius: 24px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+}
+
+.favoriteButton {
+  font-size: 16px;
+  background-color: #35679a;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  border-radius: 24px;
+}
+
+#favoritesSettings {
+  font-size: 30px;
+  margin-top: 50px;
+}
+/* Ausgewählte Objekte werden in der Farbe angezeigt */
+#selected {
+  background: #5693c0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.iconRequest {
+  width: 75px;
+  height: 75px;
+}
+
+#iconID {
+  width: 60px;
+  height: 60px;
+}
